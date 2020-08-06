@@ -1,0 +1,133 @@
+---
+title: "Results Section One"
+description: "This page includes a bunch of example code."
+tags: ["R", "geospatial", "app"]
+weight: 2
+draft: false
+output: html_document
+---
+
+
+
+<p>{css, echo=FALSE}
+/* this chunnk of code centers all of the headings */
+h1, h2, h3 {
+text-align: center;
+}</p>
+<div id="examples-page" class="section level3">
+<h3>Examples Page</h3>
+<p>If you want to add in an image on an Rmd file, use this <a href="https://lcolladotor.github.io/2018/03/07/blogdown-insert-image-addin/">link here</a>. It ends up being a little tricky, but as long as you have created a folder to insert your images, you can just use some markdown code or html to insert images in the format you want.</p>
+</div>
+<div id="centering-images" class="section level3">
+<h3>Centering images</h3>
+<p><img src="/findings/results-section-one_files/hugo.png" style="width:20%; display: block; margin-left: auto; margin-right: auto;" /></p>
+</div>
+<div id="placing-images-side-by-side" class="section level3">
+<h3>Placing images side-by-side</h3>
+<p><img src="/findings/results-section-one_files/hugo.png" width="150"/> <img src="/findings/results-section-one_files/rmarkdown.png" width="150"/> <img src="/findings/results-section-one_files/min_night.png" width="175"/> <img src="/findings/results-section-one_files/netlify.png" width="175"/></p>
+</div>
+<div id="embedding-shiny-apps" class="section level3">
+<h3>Embedding Shiny Apps</h3>
+<iframe src="https://uva-sdad.shinyapps.io/gates-dashboard/?showcase=0" width="672" height="400px">
+</iframe>
+</div>
+<div id="embedding-r-code" class="section level3">
+<h3>Embedding R code</h3>
+<p>{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(collapsibleTree)
+library(tidyverse)
+OSS &lt;- data.frame(
+Sector = c(
+“Academic”, “Academic”,“Academic”, “Academic”, “Academic”, “Academic”,“Academic”,“Academic”,“Academic”,“Academic”,“Academic”,“Academic”,
+“Academic”,“Academic”,“Academic”,“Academic”,“Academic”,“Academic”,“Academic”,</p>
+<pre><code>    &quot;Business&quot;,&quot;Business&quot;,&quot;Business&quot;,&quot;Business&quot;,&quot;Business&quot;, &quot;Business&quot;, &quot;Business&quot;, 
+    &quot;Business&quot;, &quot;Business&quot;, &quot;Business&quot;,&quot;Business&quot;,&quot;Business&quot;, &quot;Business&quot;,
+    
+    &quot;Government&quot;, &quot;Government&quot;,&quot;Government&quot;, &quot;Government&quot;,&quot;Government&quot;,&quot;Government&quot;,
+    &quot;Government&quot;, &quot;Government&quot;, &quot;Government&quot;,&quot;Government&quot;, &quot;Government&quot;, &quot;Government&quot;,
+    
+    &quot;International&quot;,&quot;International&quot;,&quot;International&quot;
+),
+DataSource = c(
+  #academic
+    &quot;github&quot;,&quot;github&quot;, &quot;github&quot;,&quot;github&quot;,&quot;github&quot;,
+    &quot;orcid&quot;, 
+    &quot;hipolabs&quot;, &quot;hipolabs&quot;,&quot;hipolabs&quot;,
+    &quot;NCSES&quot;,&quot;NCSES&quot;, &quot;NCSES&quot;, &quot;NCSES&quot;,&quot;NCSES&quot;, &quot;NCSES&quot;, &quot;NCSES&quot;,&quot;NCSES&quot;, &quot;NCSES&quot;,&quot;NCSES&quot;,
+    
+  #business
+  &quot;github&quot;,&quot;github&quot;, 
+  &quot;Enterprise-Driven OSS&quot;, &quot;Enterprise-Driven OSS&quot;,  
+  &quot;forbes&quot;,  &quot;forbes&quot;, &quot;forbes&quot;, 
+  &quot;Global Legal Entity Identifier Foundation (GLEIF)&quot;, 
+  &quot;Data Hub&quot;, &quot;Data Hub&quot;, &quot;Data Hub&quot;, 
+  &quot;2020 US Business Database&quot;,
+  
+#gov  
+    &quot;github&quot;,&quot;github&quot;, &quot;System for Award Management (SAM)&quot;, &quot;System for Award Management (SAM)&quot;,
+&quot;System for Award Management (SAM)&quot;,&quot;us gov&quot;,&quot;us gov&quot;,&quot;us gov&quot;,&quot;us gov&quot;,&quot;us gov&quot;,&quot;us gov&quot;, &quot;code gov&quot;, &quot;crowdsourced&quot;,
+ 
+ #international
+   &quot;github&quot;,&quot;github&quot;, &quot;mindmap&quot;
+),
+SubData = c(
+  #academic
+    &quot;contributor&quot;,&quot;contributor&quot;,&quot;contributor&quot;,&quot;contributor&quot;,&quot;commits&quot;, 
+    &quot;orcid&quot;, 
+    &quot;hipolabs&quot;, &quot;hipolabs&quot;,&quot;hipolabs&quot;,
+    &quot;Survey of Federal Science and Engineering Support 2018&quot;, 
+    &quot;Survey of Federal Science and Engineering Support 2018&quot;, &quot;Survey of Federal Science and Engineering Support 2018&quot;, 
+    &quot;Survey of Federal Science and Engineering Support 2018&quot;, &quot;Higher Education Research and Development Survey 2018&quot;, 
+    &quot;Higher Education Research and Development Survey 2018&quot;, &quot;Higher Education Research and Development Survey 2018&quot;, 
+    &quot;Higher Education Research and Development Survey 2018&quot;, &quot;Higher Education Research and Development Survey 2018&quot;, 
+    &quot;Higher Education Research and Development Survey 2018&quot;, 
+    
+  #business
+    &quot;contributor&quot;, &quot;commits&quot;, 
+  &quot;cohort project details&quot;, &quot;enterprise project&quot;,
+  &quot;Fortune&#39;s Annual Ranking of Companies 2018 (US 1000)&quot;, 
+  &quot;Fortune&#39;s Annual Ranking of Companies 2019 (US 1000)&quot;, 
+  &quot;Fortune&#39;s Annual Ranking of Companies 2020 (Global 2000)&quot;, 
+  &quot;GLEIF&quot;, 
+  &quot;email domains&quot;,  &quot;email domains&quot;, &quot;email domains&quot;, 
+  &quot;2020 US Business Database&quot;,
+    
+  #gov
+    &quot;contributor&quot;, &quot;commits&quot;, 
+    &quot;System for Award Management (SAM)&quot;,&quot;System for Award Management (SAM)&quot;,
+  &quot;System for Award Management (SAM)&quot;,&quot;Federally Funded R&amp;D Centers&quot;, &quot;Federally Funded R&amp;D Centers&quot;, 
+    &quot;A-Z Index&quot;,&quot;A-Z Index&quot;, &quot;A-Z Index&quot;,&quot;A-Z Index&quot;,
+    &quot;code gov&quot;, &quot;crowdsourced&quot;, 
+
+  #international    
+    &quot;contributor&quot;, &quot;commits&quot;, &quot;mindmap&quot;
+),
+Variables = c(
+    &quot;login&quot;, &quot;email&quot;,&quot;organization&quot;,&quot;company&quot;,&quot;commits&quot;,
+    &quot;orcid&quot;, 
+    &quot;institution&quot;,
+    &quot;country&quot;,
+    &quot;domains&quot;,
+    &quot;institution&quot;, &quot;rank&quot;,&quot;all federal obligations&quot; , &quot;R&amp;D&quot;, &quot;institution&quot;, &quot;rank&quot;, 
+    &quot;R&amp;D expenditure&quot;, &quot;federal gov fund&quot;, &quot;state local gov fund&quot;, &quot;institution funds&quot;,
+    
+    &quot;contributor&quot;, &quot;commits&quot;, 
+    &quot;cohort project details&quot;, &quot;enterprise project&quot;, 
+    &quot;Fortune&#39;s Annual Ranking of Companies 2018 (US 1000)&quot;, &quot;Fortune&#39;s Annual Ranking of Companies 2019 (US 1000)&quot;, &quot;Fortune&#39;s Annual Ranking of Companies 2020 (Global 2000)&quot;, 
+    &quot;country&quot;, 
+    &quot;domain&quot;, &quot;type&quot;, &quot;organization&quot;, &quot;2020 US Business Database&quot;,
+    
+    &quot;contributor&quot;, &quot;commits&quot;,  &quot;parent&quot;,&quot;fhorgtype&quot;, &quot;fhorgname&quot;, &quot;ffrdc name&quot;, &quot;agency&quot;, &quot;agency&quot;, &quot;gov branch&quot;, &quot;parent agency&quot;, &quot;parent agency parent&quot;, &quot;code gov&quot;, &quot;crowdsourced&quot;, 
+    
+    &quot;contributor&quot;, &quot;commits&quot;, &quot;mindmap&quot;
+)</code></pre>
+<p>)</p>
+</div>
+<div id="collapsible-tree" class="section level1">
+<h1>Collapsible Tree</h1>
+<p>collapsibleTree(OSS,
+c(“Sector”, “DataSource”, “SubData”, “Variables”),
+collapsed = T,
+fill =“#E57200”
+)</p>
+</div>
