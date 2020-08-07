@@ -16,20 +16,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/general-overview/</guid>
-      <description>Main Findings
-We set f1-score as the main indicator of the performance of our algorithms. For all 4 algorithms, we have obtained f1-scores above 90%, indicating the reliability of predictions. Accuracies obtained, further corroborate our confidence in the algorithms.
+      <description>Main FindingsWe set f1-score as the main indicator of the performance of our algorithms. For all 4 algorithms, we have obtained f1-scores above 90%, indicating the reliability of predictions. Accuracies obtained, further corroborate our confidence in the algorithms.
 
+Figure 1: f1-scores of 4 algorithms used
 
+Figure 2: Accuracies of 4 algorithms used
 
-Figure 1: f1-scores of 4 algorithms used
-
-
-Figure 2: Accuracies of 4 algorithms used
-
-
-
-Conclusion and Policy Implications
-Given the f1-scores and accuracies above, the project has the potential to create tangible benefit to the municipality.</description>
+Conclusion and Policy ImplicationsGiven the f1-scores and accuracies above, the project has the potential to create tangible benefit to the municipality.</description>
     </item>
     
     <item>
@@ -38,13 +31,8 @@ Given the f1-scores and accuracies above, the project has the potential to creat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/results-section-one/</guid>
-      <description>{css, echo=FALSE}
-/* this chunnk of code centers all of the headings */
-h1, h2, h3 {
-text-align: center;
-}
-Examples Page
-If you want to add in an image on an Rmd file, use this link here. It ends up being a little tricky, but as long as you have created a folder to insert your images, you can just use some markdown code or html to insert images in the format you want.</description>
+      <description>{css, echo=FALSE}/* this chunnk of code centers all of the headings */h1, h2, h3 {text-align: center;}
+Examples PageIf you want to add in an image on an Rmd file, use this link here. It ends up being a little tricky, but as long as you have created a folder to insert your images, you can just use some markdown code or html to insert images in the format you want.</description>
     </item>
     
     <item>
@@ -54,8 +42,7 @@ If you want to add in an image on an Rmd file, use this link here. It ends up be
       
       <guid>/findings/results-section-two/</guid>
       <description>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp;amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]
-Main Findings
-[Here you will describe the results and include important visualizations from your project.</description>
+Main Findings[Here you will describe the results and include important visualizations from your project.</description>
     </item>
     
     <item>
@@ -65,8 +52,7 @@ Main Findings
       
       <guid>/findings/results-section-three/</guid>
       <description>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp;amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]
-Main Findings
-[Here you will describe the results and include important visualizations from your project.</description>
+Main Findings[Here you will describe the results and include important visualizations from your project.</description>
     </item>
     
     <item>
@@ -75,13 +61,7 @@ Main Findings
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/methods/</guid>
-      <description>/* this chunnk of code centers all of the headings */
-h1, h2, h3 {
-text-align: center;
-}
-
-Data and Methods
-We scraped written complaints addressed to the municipality and its enterprises via SikayetVar - an online platform for raising complaints to public organisations and private companies. The complaints have been classified as IGDAS (enterprise responsible for natural gas distribution and billing), IETT (enterprise responsible for public transportation, mainly buses), ISKI (enterprise responsible for water distribution and billing) or other enterprises with respect to their contents.</description>
+      <description>/* this chunnk of code centers all of the headings */h1, h2, h3 {text-align: center;}Data and MethodsWe scraped written complaints addressed to the municipality and its enterprises via SikayetVar - an online platform for raising complaints to public organisations and private companies. The complaints have been classified as IGDAS (enterprise responsible for natural gas distribution and billing), IETT (enterprise responsible for public transportation, mainly buses), ISKI (enterprise responsible for water distribution and billing) or other enterprises with respect to their contents.</description>
     </item>
     
     <item>
@@ -90,13 +70,7 @@ We scraped written complaints addressed to the municipality and its enterprises 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/overview/</guid>
-      <description>/* this chunnk of code centers all of the headings */
-h1, h2, h3 {
-text-align: center;
-}
-
-Project Overview
-Beyaz Masa, complaint desk of Istanbul Metropolitan Municipality, is constantly loaded with volumes of complaints written for various matters via different platforms. Only in May 2020, Beyaz Masa received complaints of almost a million which report problems ranging from broken pipes to buses running late. In addition, particularly thorough Twitter, irrelevant and political content is addressed to the municipality accounts which unnecessarily divert attention of workers at Beyaz Masa.</description>
+      <description>/* this chunnk of code centers all of the headings */h1, h2, h3 {text-align: center;}Project OverviewBeyaz Masa, complaint desk of Istanbul Metropolitan Municipality, is constantly loaded with volumes of complaints written for various matters via different platforms. Only in May 2020, Beyaz Masa received complaints of almost a million which report problems ranging from broken pipes to buses running late. In addition, particularly thorough Twitter, irrelevant and political content is addressed to the municipality accounts which unnecessarily divert attention of workers at Beyaz Masa.</description>
     </item>
     
     <item>
@@ -105,13 +79,7 @@ Beyaz Masa, complaint desk of Istanbul Metropolitan Municipality, is constantly 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/team/</guid>
-      <description>/* this chunnk of code centers all of the headings */
-h1, h2, h3 {
-text-align: center;
-}
-
-UVA Data Science for the Public Good
-The Data Science for the Public Good (DSPG) Young Scholars program is a summer immersive program held at the Biocomplexity Institute’s Social and Decision Analytics division (SDAD). In its seventh year, the program engages students from across the country to work together on projects that address state, federal, and local government challenges around critical social issues relevant in the world today.</description>
+      <description>/* this chunnk of code centers all of the headings */h1, h2, h3 {text-align: center;}UVA Data Science for the Public GoodThe Data Science for the Public Good (DSPG) Young Scholars program is a summer immersive program held at the Biocomplexity Institute’s Social and Decision Analytics division (SDAD). In its seventh year, the program engages students from across the country to work together on projects that address state, federal, and local government challenges around critical social issues relevant in the world today.</description>
     </item>
     
   </channel>
